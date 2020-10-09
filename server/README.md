@@ -16,7 +16,15 @@
 
 ### List of available endpoints:
 
+## 1. Auth
+- Header parameter
+
+  | Parameter       | Type   | Description                   | Required |
+  |-----------------|--------|-------------------------------|----------|
+  | Accept-Language | string | id = Indonesian, en = English | Optional |
+
 #### POST /auth/register
+  
 - Body Parameter
 
   | Parameter | Type   | Description                                                                                   | Required |
