@@ -35,6 +35,7 @@
    ```
        
 - Response:
+  `status`: `201`
   
     | Parameter | Type   | Description                   |
     |-----------|--------|-------------------------------|
@@ -51,7 +52,6 @@
   | email     | string | email of user               |
     
 - Example response:
-  `status`: `201`
   ```json
      {
          "code": 1,
@@ -80,7 +80,8 @@
    ```
        
 - Response:
-  
+   `status`: `200`
+   
   | Parameter | Type   | Description                   |
   |-----------|--------|-------------------------------|
   | code      | number | 0: Error, 1: Success          |
@@ -94,7 +95,6 @@
   | token     | string | token of user |
     
 - Example response:
-  `status`: `200`
   ```json
      {
          "code": 1,
