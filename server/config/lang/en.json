@@ -15,5 +15,6 @@
   "lowercase": "Lowercase",
   "login {n}": "Login {n}",
   "failed": "Failed",
-  "successfully": "Successfully"
+  "successfully": "Successfully",
+  "registered {n}": "registered {n}"
 }

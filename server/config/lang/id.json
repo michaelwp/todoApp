@@ -15,5 +15,6 @@
   "lowercase": "huruf kecil",
   "login {n}": "Login {n}",
   "failed": "Gagal",
-  "successfully": "Berhasil"
+  "successfully": "Berhasil",
+  "registered {n}": "{n} terdaftar"
 }
