@@ -36,11 +36,11 @@
        
 - Response:
   
-  | Parameter | Type   | Description                                      |
-  |-----------|--------|--------------------------------------------------|
-  | code      | number | 0: Error, 1: Success, 2: Duplicate, 3: Not found |
-  | Message   | string | title/ description                               |
-  | data      | object | the parameters explained next                    |      
+    | Parameter | Type   | Description                   |
+    |-----------|--------|-------------------------------|
+    | code      | number | 0: Error, 1: Success          |
+    | Message   | string | title/ description            |
+    | data      | object | the parameters explained next |      
   
   data parameter:
     
@@ -81,11 +81,11 @@
        
 - Response:
   
-  | Parameter | Type   | Description                                      |
-  |-----------|--------|--------------------------------------------------|
-  | code      | number | 0: Error, 1: Success, 2: Duplicate, 3: Not found |
-  | Message   | string | title/ description                               |
-  | data      | object | the parameters explained next                    |      
+  | Parameter | Type   | Description                   |
+  |-----------|--------|-------------------------------|
+  | code      | number | 0: Error, 1: Success          |
+  | Message   | string | title/ description            |
+  | data      | object | the parameters explained next |      
   
   data parameter:
     
