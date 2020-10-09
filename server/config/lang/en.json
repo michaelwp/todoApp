@@ -1,0 +1,19 @@
+{
+  "{n} already registered": "{n} already registered",
+  "internal server error": "Internal server error, please contact the administrator",
+  "{n}, not found": "{n}, not found",
+  "{n} is required": "{n} is required",
+  "{n} {x} {m} characters": "{n} {x} {m} characters",
+  "{n} is not valid": "{n} is not valid",
+  "{n} must contain at least {m}": "{n} must contain at least {m}",
+  "name": "Name",
+  "password": "Password",
+  "number": "Number",
+  "letter": "Letter",
+  "symbol":  "Symbol",
+  "uppercase": "Uppercase",
+  "lowercase": "Lowercase",
+  "login {n}": "Login {n}",
+  "failed": "Failed",
+  "successfully": "Successfully"
+}

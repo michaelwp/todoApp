@@ -1,0 +1,19 @@
+{
+  "{n} already registered": "{n} sudah terdaftar",
+  "internal server error": "Kesalahan server, harap hubungi administrator",
+  "{n}, not found": "{n}, tidak ditemukan",
+  "{n} is required": "{n} diperlukan",
+  "{n} {x} {m} characters": "{n} {x} {m} karakter",
+  "{n} is not valid": "{n} tidak valid",
+  "{n} must contain at least {m}": "{n} harus mengandung setidaknya {m}",
+  "name": "nama",
+  "password": "kata sandi",
+  "number": "angka",
+  "letter": "huruf",
+  "symbol":  "simbol",
+  "uppercase": "huruf kapital",
+  "lowercase": "huruf kecil",
+  "login {n}": "Login {n}",
+  "failed": "Gagal",
+  "successfully": "Berhasil"
+}
