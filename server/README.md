@@ -367,15 +367,6 @@
     | status    | string | todos status |
     | _id       | string | todos id     |
     | title     | string | todos title  |
-    | user      | object | user details |
-    
-    user parameter:
-    
-    | Parameter | Type   | Description   |
-    |-----------|--------|---------------|
-    | _id       | string | user id       |
-    | name      | string | name of user  |
-    | email     | string | email of user |
       
   - Example response:
     ```json

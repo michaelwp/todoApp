@@ -119,7 +119,6 @@ class Todo {
   static remove(req, res, next) {
     todo
       .findByIdAndDelete(req.params.id)
-      .populate('user', 'name email')
       .select('_id title status')
       .then((response) => {
         const responseData = {
