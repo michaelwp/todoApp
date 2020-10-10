@@ -18,8 +18,8 @@ class Auth {
           message: t('registered {n}', { n: t('successfully') }),
           data: {
             id: response._id,
-            name:response.name,
-            email: response.email
+            name: response.name,
+            email: response.email,
           },
         });
       })

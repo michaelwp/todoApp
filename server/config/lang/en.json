@@ -16,5 +16,8 @@
   "login {n}": "Login {n}",
   "failed": "Failed",
   "successfully": "Successfully",
-  "registered {n}": "registered {n}"
+  "registered {n}": "registered {n}",
+  "created {n}": "created {n}",
+  "updated {n}": "updated {n}",
+  "deleted {n}": "deleted {n}"
 }

@@ -16,5 +16,8 @@
   "login {n}": "Login {n}",
   "failed": "Gagal",
   "successfully": "Berhasil",
-  "registered {n}": "{n} terdaftar"
+  "registered {n}": "{n} terdaftar",
+  "created {n}": "{n} dibuat",
+  "updated {n}": "{n} diperbaharui",
+  "deleted {n}": "{n} dihapus"
 }
