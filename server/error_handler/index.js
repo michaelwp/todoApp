@@ -17,13 +17,15 @@ const errorHandler = (err, req, res, next) => {
     if (/duplicate key/.test(errMsg)) {
       if (/email/.test(errMsg)) {
         response.message = t('{n} already registered', { n: 'email' });
+        res.status(200).json(response);
       } else if (/title/.test(errMsg)) {
         response.message = t('{n} already registered', { n: 'title' });
+        res.status(200).json(response);
       } else {
         response.message = t('internal server error');
+        res.status(500).json(response);
       }
     }
-    res.status(400).json(response);
   } else {
     response.message = errMsg;
     res.status(err.code).json(response);

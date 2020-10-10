@@ -13,10 +13,14 @@ class Auth {
         password,
       })
       .then((response) => {
-        res.status(200).json({
+        res.status(201).json({
           code: 1,
-          message: 'register',
-          data: response,
+          message: t('registered {n}', { n: t('successfully') }),
+          data: {
+            id: response._id,
+            name: response.name,
+            email: response.email,
+          },
         });
       })
       .catch(next);

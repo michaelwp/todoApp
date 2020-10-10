@@ -11,10 +11,14 @@ class Todo {
         user: req.userId,
       })
       .then((response) => {
-        res.status(200).json({
+        res.status(201).json({
           code: 1,
-          message: 'create',
-          data: response,
+          message: t('created {n}', { n: t('successfully') }),
+          data: {
+            id: response._id,
+            title: response.title,
+            status: response.status,
+          },
         });
       })
       .catch(next);
@@ -33,6 +37,8 @@ class Todo {
 
     todo
       .find(f)
+      .populate('user', 'name email')
+      .select('_id title status')
       .then((response) => {
         res.status(200).json({
           code: 1,
@@ -46,6 +52,8 @@ class Todo {
   static view(req, res, next) {
     todo
       .findById(req.params.id)
+      .populate('user', 'name email')
+      .select('_id title status')
       .then((response) => {
         const responseData = {
           code: 0,
@@ -96,10 +104,12 @@ class Todo {
         title: title.toLowerCase(),
         status: status.toLowerCase(),
       })
+      .populate('user', 'name email')
+      .select('_id title status')
       .then((response) => {
         res.status(200).json({
           code: 1,
-          message: 'update',
+          message: t('updated {n}', { n: t('successfully') }),
           data: response,
         });
       })
@@ -109,6 +119,7 @@ class Todo {
   static remove(req, res, next) {
     todo
       .findByIdAndDelete(req.params.id)
+      .select('_id title status')
       .then((response) => {
         const responseData = {
           code: 0,
@@ -118,7 +129,7 @@ class Todo {
 
         if (response != null) {
           responseData.code = 1;
-          responseData.message = 'Delete';
+          responseData.message = t('deleted {n}', { n: t('successfully') });
           responseData.data = response;
         }
 
